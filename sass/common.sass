@@ -1,0 +1,80 @@
+@import 'variables.sass'
+
+.main-heading
+  font-size: 35px
+  &.darkPurple
+    color: $darkPurple
+  &.skyblue
+    color: $skyBlue
+  &.purple
+    color: $purple
+  &.blue
+    color: $blue
+
+
+.section-heading
+  font-size: 32px
+  &.lightGrey
+    color: $lightGray
+  &.blue
+    color: $blue
+  &.purple
+    color: $purple
+  &.grey
+    color: #545F7E
+
+.line
+  width: 50px
+  height: 6px
+  &.green
+    background: $green
+  &.skyBlue
+    background: $skyBlue
+  &.coral
+    background: $coral
+  &.yellow
+    background: #FFA330
+
+
+.descr
+  font-size: 16px
+  line-height: 1.6
+  font-weight: 500
+  &.lightGrey
+    color: $lightGray
+  &.darkPurple
+    color: $darkPurple
+  &.darkViolet
+    color: $darkViolet
+
+.rf-container
+  width: 90%
+  max-width: 1200px
+  margin: 0 auto
+  @media screen and (max-width: 600px)
+    width: 90%
+
+.btn
+  display: inline-block
+  height: 60px
+  line-height: 60px
+  padding: 0 35px
+  border-radius: 38px
+  font-size: 18px
+  text-transform: uppercase
+  &.orange
+    background: transparent linear-gradient(180deg, #FFA330 0%, #F07379 100%) 0% 0% no-repeat padding-box
+    color: $white
+
+@media screen and ( max-width: 375px )
+  .section-heading
+    font-size: 26px
+  .main-heading
+    font-size: 26px
+  .descr
+    font-size: 14px
+  
+
+
+
+  

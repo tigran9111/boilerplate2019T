@@ -1,0 +1,71 @@
+@import "variables.sass"
+.create-video
+    margin-top: -6px
+    position: relative
+    .create-video-background-image
+        width: 100%
+    .create-video-content
+        position: absolute
+        top: 0
+        color: white
+        left: 50%
+        transform: translateX(-50%)
+        max-width: 722px
+        text-align: center
+        width: 95%
+        .video-wrapper
+            position: relative
+            width: 100%
+            padding-top: 56.25%
+            .create-video-frame
+                width: 100%
+                height: 100%
+                border-radius: 15px
+                margin-top: 30px
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+    .rf-blue-bg
+        height: 0
+        background-color: $blue
+        margin-top: -5px
+        width: 100%
+    .path
+        display: none
+        width: 100%
+        margin-top: -5px
+@media screen and ( max-width: 1440px )
+    .create-video
+        .create-video-content
+            top: -40px    
+
+@media screen and ( max-width: 1025px )
+        .create-video
+            padding-bottom: 50px
+            .create-video-content
+                top: -60px
+
+
+@media screen and ( max-width: 870px )
+    .create-video
+        .section-heading
+            font-size: 26px
+            max-width: 450px
+            margin: 0 auto
+        .rf-blue-bg
+            height: 130px
+        .path
+            display: block    
+    .create-video-background-image
+        background-color: $blue
+    
+@media screen and ( max-width: 484px )
+    .create-video-content
+        .section-heading
+            padding-top: 35px
+            font-size: 26px
+    .rf-blue-bg
+        width: 100px
+

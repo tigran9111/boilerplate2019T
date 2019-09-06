@@ -1,0 +1,38 @@
+.rating-wrap
+    background-color: $blue
+    text-align: center
+    padding-top: 100px
+    display: flex
+    width: 100%
+    margin: 0 auto
+    .rating-content
+        max-width: 800px
+        color: white
+        width: 90%
+        margin: 0 auto
+        position: relative
+        z-index: 1
+        .line
+            margin: 30px auto
+        .rating-items
+            display: flex
+            justify-content: space-around
+            padding-top: 40px
+            .rating-logo
+                padding: 25px 50px
+                background-color: white
+                border-radius: 10px
+.rating-illustration
+    width: 100%
+    margin-top: -1px
+
+@media screen and ( max-width: 992px )
+    .rating-wrap
+        padding-top: 30px
+        .rating-content
+            .rating-items
+                flex-direction: column
+                .rating-logo
+                    margin: 10px auto
+
+    

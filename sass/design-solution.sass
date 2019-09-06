@@ -1,0 +1,50 @@
+.design-solution
+    text-align: center
+    padding-top: 75px
+    .line
+        margin: 30px auto
+    .design-ill
+        height: 300px
+        background-size: cover
+        background-repeat: repeat-x
+    .design-ill-1
+        background-image: url("../img/1min.png") 
+        animation: slide 40s infinite linear
+        @keyframes slide
+            from
+                background-position: 0 0
+            to
+                background-position: -2918px 0
+    .design-ill-2
+        background-image: url('../img/min.png')  
+        animation: slider 80s infinite linear
+        @keyframes slider
+            from
+                background-position: 0 0
+            to  
+                background-position: 2918px 0
+    .design-ill-3
+        background-image: url('../img/3min.png')  
+        animation: sliders 60s infinite linear
+        @keyframes sliders
+            from
+                background-position: 0 0 
+            to
+                background-position: -2918px 0
+
+@media screen and ( max-width: 1024px)
+    .design-solution
+        padding-top: 40px
+        .design-ill
+            height: 200px
+
+@media screen and ( max-width: 850px )
+    .design-solution
+        .design-ill
+            height: 160px
+
+@media screen and ( max-width: 350px )
+        .design-ill
+            height: 80px
+
+    

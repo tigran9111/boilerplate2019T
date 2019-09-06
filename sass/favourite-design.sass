@@ -1,0 +1,47 @@
+.favorite-design
+  padding: 50px 0
+  background: transparent linear-gradient(180deg, #FFFFFF 0%, #F6FAFF 16%, #F6FAFF 89%, #F6FAFF 100%) 0% 0% no-repeat padding-box
+  text-align: center
+  .rf-container
+    .section-heading.blue
+      max-width: 728px
+      margin: 0 auto
+      width: 90%
+    .line
+      margin: 30px auto
+    .favorite-design-items
+      display: flex
+      justify-content: space-around
+      margin-top: 30px
+      flex-wrap: wrap
+      .design-item
+        display: flex
+        flex-direction: column
+        align-items: center
+        max-width: 130px 
+      .design-item-pic
+        border-radius: 50%
+        width: 106px
+        height: 106px
+        display: flex
+        align-items: center
+        justify-content: center
+        &.blue
+          background: transparent linear-gradient(180deg, #4FCEFF 0%, #00ADF0 100%) 0% 0% no-repeat padding-box
+        &.purple
+          background: transparent linear-gradient(180deg, #938BFF 0%, #7169DD 100%) 0% 0% no-repeat padding-box
+        &.orange
+          background: transparent linear-gradient(180deg, #E79E00 0%, #F37C6A 100%) 0% 0% no-repeat padding-box
+        &.green
+          background: transparent linear-gradient(180deg, #6BEB88 0%, #4FDC6F 100%) 0% 0% no-repeat padding-box
+        &.dark-blue
+          background: transparent linear-gradient(180deg, #5690FF 0%, #1C6AFD 100%) 0% 0% no-repeat padding-box
+      .descr
+        margin: 20px 0 0 0
+
+@media screen and ( max-width: 800px )
+  .favorite-design-items
+    flex-direction: column
+    align-items: center
+    .design-item
+      margin-top: 30px
