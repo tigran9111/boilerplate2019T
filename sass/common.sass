@@ -1,14 +1,38 @@
+@import 'variables.sass'
 .btn
   display: inline-block
-  height: 60px
-  line-height: 60px
-  padding: 0 35px
-  border-radius: 38px
+  height: 50px
+  line-height: 50px
+  padding: 0 30px
+  border-radius: 25px
   font-size: 18px
   text-transform: uppercase
+  color: $white
+  text-decoration: none
   &.orange
-    background: transparent linear-gradient(180deg, #FFA330 0%, #F07379 100%) 0% 0% no-repeat padding-box
-    color: $white
+    background: transparent linear-gradient(180deg, #FFA330 0%, #F07379 100%) 0% 0% no-repeat 
+    &:hover
+      box-shadow: 0 0 10px rgba( #F37C6C,0.5)
+      background: linear-gradient(#FFB04E  ,#FF7E84)
+    &:active
+      background: linear-gradient(#FF991A , #FE6A71)
+      box-shadow: none
+  &.blue
+    background: transparent linear-gradient(180deg, #5690FF 0%, #387DFF 100%) 0% 0% no-repeat 
+    &:hover
+      box-shadow: 0 0 10px rgba( #5690FF,0.5)
+      background: linear-gradient(#6EA0FF ,#518DFF)
+    &:active
+      background: linear-gradient(#4D88F9 ,#206CFD)
+      box-shadow: none
+
+  
+.main-title
+  font-size: 30px
+  &.blue
+    color: $blue
+  &.darkPurple 
+    color: $darkPurple
 
 .descr
   font-size: 16px
@@ -22,8 +46,8 @@
     color: $darkViolet
 
 .line
-  width: 50px
-  height: 6px
+  width: 40px
+  height: 5px
   &.green
     background: $green
   &.skyBlue
@@ -31,4 +55,6 @@
   &.coral
     background: $coral
   &.yellow
-    background: #FFA330
+    background: $yellow
+  &purple
+    background: $purple
