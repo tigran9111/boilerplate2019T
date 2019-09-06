@@ -1,0 +1,33 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for front-end development",
+  "main": "index.html",
+  "author": "L31",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "2.18.8",
+    "ejs": "2.5.6",
+    "express": "4.15.2",
+    "gulp-cli": "1.2.2",
+    "gulp-concat": "2.6.1",
+    "gulp-ejs": "3.0.1",
+    "gulp-install": "1.1.0",
+    "gulp-nodemon": "2.2.1",
+    "gulp-notify": "3.0.0",
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "2.6.0",
+    "gulp-uglify": "2.1.2",
+    "gulp-watch": "4.3.11"
+  },
+  "devDependencies": {
+    "bootstrap": "3.3.7",
+    "font-awesome": "4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "4.0.0",
+    "gulp-yarn": "1.0.0",
+    "jquery": "3.3.1",
+    "node-sass": "4.7.2",
+    "normalize.css": "8.0.0"
+  }
+}
