@@ -1,0 +1,54 @@
+
+.crowd
+    background: #F5FAFE 0% 0% no-repeat padding-box
+    background-image: url("../img/background.svg")
+    background-size: cover
+    position: relative
+    padding: 90px 0 60px
+    .feedback
+        display: flex
+        justify-content: center
+        text-align: center
+        flex-wrap: wrap
+        .users
+            display: flex
+            flex-direction: column
+            width: 100%
+            max-width: 240px
+            border-radius: 10px
+            box-shadow: 0px 6px 12px #0052E01A
+            padding: 15px 28px
+            margin: 15px
+            background-color: white
+            .user-name
+                color: $blueGray
+                font-size: 16px
+                font-weight: bold
+            hr 
+                width: 80%
+                opacity: 0.1
+            .descr
+                font-size: 14px
+                line-height: 22px
+            .g2crowd
+                padding-top: 20px
+                margin-top: auto
+                display: flex
+                justify-content: center
+                align-items: center
+                .blue-text
+                    margin-left: 4px
+                    a 
+                        color: $blue
+    .rating
+        position: absolute
+        top: -13px
+        right: 50px
+
+@media screen and ( max-width: 500px )
+    .crowd
+        background-image: none
+        .feedback
+            margin-top: 60px
+
+    

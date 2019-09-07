@@ -1,0 +1,93 @@
+.skills
+    background: #F5FAFE 0% 0% no-repeat padding-box
+    margin-top: -5px
+    padding: 50px 0
+    .container
+        text-align: center
+        .line
+            margin: 20px auto
+        .main-title
+            font-weight: bolder
+            max-width: 600px
+            margin: 0 auto
+        .skills-block
+            display: flex
+            align-items: center
+            justify-content: space-around
+            padding-top: 60px
+            position: relative
+            .skills-content
+                text-align: left
+                max-width: 450px
+                margin-left: 40px
+                .heading
+                    font-size: 22px
+                    position: relative
+                    font-weight: bold
+                    .number
+                        position: absolute
+                        color: $blue
+                        font-size: 50px
+                        font-weight: bold
+                        left: -50px
+                        top: -15px
+                .descr
+                    padding-top: 18px
+                    font-size: 18px
+            .img-wrap
+                max-width: 320px
+                .skills-image
+                    width: 100%
+            .right-narrow
+                position: absolute
+                right: 0
+                bottom: 10px
+            .left-narrow
+                position: absolute
+                left: 0
+                bottom: -50px
+        .btn
+            margin-top: 60px
+
+@media screen and ( max-width: 992px )
+    .skills
+        .container
+            .skills-block
+                flex-direction: column
+                .skills-content
+                    padding-top: 40px
+                .img-wrap
+                    padding-right: 0
+            .reverse
+                display: flex
+                flex-direction: column-reverse
+        .left-narrow
+            display: none
+        .right-narrow
+            display: none
+
+@media screen and ( max-width: 640px )
+    .skills
+        .container
+            .skills-block
+                .skills-content
+                    .heading
+                        .number
+                            font-size: 40px
+                    .descr
+                        font-size: 14px
+
+@media screen and ( max-width: 400px)
+    .skills
+        .container
+            .btn
+                font-size: 15px
+            .skills-block
+                .skills-content
+                    .heading
+                        .number
+                            left: -38px
+                            top: -9px
+                            font-size: 35px
+
+    
