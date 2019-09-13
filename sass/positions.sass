@@ -1,0 +1,49 @@
+.positions
+    position: relative
+    background-color: #F5FAFE
+    .side-rotate
+        color: $lightSkyBlue
+        position: absolute
+        top: 50%
+        .line-rotate
+            background: $lightSkyBlue
+            margin-left: 10px
+    .container
+        display: flex
+        flex-direction: column
+        align-items: center
+        background-image: url("../img/positions-background.svg")
+        background-size: cover
+        .content-items
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            .item
+                display: flex
+                justify-content: space-beetwen
+                width: 33%
+                margin: 0 auto
+                justify-content: space-between
+                padding: 25px 30px
+                box-shadow: 0px 3px 10px #EEF5FF
+                margin: 20px
+                border-radius: 10px
+                background: $white
+                border: 1px solid #EEF5FF
+                cursor: pointer
+                transition: box-shadow .3s
+                .item-heading
+                    font-size: 18px
+                    color: #252E48
+                    font-weight: 600
+                .item-text
+                    color: #9AA6C8
+                    margin-top: 3px
+            .item:hover
+                box-shadow: 0px 3px 10px #387DFF4D
+                .item-heading
+                    color: $blue
+                .item-text
+                    color: $blue
+                .item-it
+                    color: $blue
