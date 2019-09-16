@@ -14,33 +14,115 @@
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
+<section class="main-picture">
+    <figure class="picture-wrap">
+        <img class="office-image" src="../img/office.png">
+    </figure>
+    <div class="contact-us">
+        <div class="contact-items">
+            <div class="item">
+                <h3 class="title"> Need Help? </h3>
+                <p class="descr">For any comments, questions or suggestions regarding your Renderforest account, please, contact our support team.</p>
+                <a href="mailto:support@renderforest.com" class="mail">support@renderforest.com</a>
+            </div>
+            <div class="item">
+                <h3 class="title"> Got Ideas? </h3>
+                <p class="descr">For general inquiries, partnership requests, as well as media related information, get in touch with the CMO.</p>
+                <a href="mailto:support@renderforest.com" class="mail">support@renderforest.com</a>
+                </div>
+            <div class="item">
+                <h3 class="title"> Sales department </h3>
+                <p class="descr">For any comments, questions or suggestions regarding your Renderforest account, please, contact our support team.</p>
+                <a href="mailto:support@renderforest.com" class="mail">support@renderforest.com</a>
+            </div>
+            <div class="social-items">
+                <div class="social-item fb"></div>
+                <div class="social-item instagram"></div>
+                <div class="social-item pinterest"></div>
+                <div class="social-item twitter"></div>
+                <div class="social-item youtube"></div>
+                <div class="social-item linkedin"></div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3 class="title">Still looking for an answer?</h3>
+            <form>
+                <div class="input-wrap">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="input-subscr name">
+                    <span class="empty err-msg">Empty Input</span>
+                    <span class="short-text err-msg">Short Text</span>
+                </div>
+                <div class="input-wrap">
+                    <label for="mail">Email</label>
+                    <input type="mail" id="mail" class="input-subscr mail">
+                </div>
+                <div class="input-wrap">
+                    <label for="message" class="area-label">Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                
+                <a href="#" class="rf-btn blue">Send</a>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="location hideme">
+    <img class="location-ill" src="../img/ill1.svg">
+    <div class="container">
+        <div class="location-text">
+            <h3 class="title">Renderforest LLC</h3>
+            <div class="content-wrap">
+                <img class="location-pic" src="../img/location.svg">
+                <div class="descr-wrap">                             
+                    <p class="descr">Paruyr Sevak</p>
+                    <p class="descr-sm">Yerevan, Armenia</p>
+                </div>  
+            </div>
+            <div class="content-wrap">
+                    <img class="location-pic" src="../img/phone.svg">
+                <div class="descr-wrap">                             
+                    <p class="descr">+37411224000</p>
+                </div>  
+            </div>
+        </div>
+        <div class="location-map">
+            <img class="map-img" src="../img/map.png" >
+        </div>
+    </div>
+</section>
 
-<h1>hello world</h1>
 
 
-
-
-
-
-
-
-
-
-<!-- init owl carousel 
     <script>
     $(document).ready(function(){
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items:1,
-            loop:true,
-            margin:10,
-            autoplay:true,
-            autoplayTimeout:2000,
-            autoplayHoverPause:true
-        });
+            
+
+
+
+
+
+
+
+        $('.name').blur(function(){
+            if( $('.name').val() === ''){
+                $(this).parent().find('.err-msg').removeClass('show')
+                $(this).parent().find('.empty').addClass('show')
+            } 
+            else if($('.name').val().length > 0 && $('.name').val().length < 4 ){
+                $(this).parent().find('.err-msg').removeClass('show')
+                $(this).parent().find('.short-text').addClass('show')
+            }
+            else if($('.name').val().length > 4){
+                $(this).parent().find('.short-text').removeClass('show')
+                $(this).parent().find('.empty').removeClass('show')
+            }
+        })
+
     });
-</script> -->
+</script>
 </body>
 </html>
