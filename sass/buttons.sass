@@ -1,0 +1,99 @@
+.rf-btn
+  display: inline-block
+  border-radius: 38px
+  color: $white
+  cursor: pointer
+  transition: all 0.1s linear
+  text-decoration: none !important
+  text-transform: uppercase
+  border: none
+  font-weight: 400
+  background-repeat: no-repeat !important
+  user-select: none
+  &:focus
+    box-shadow: inset 0px 0px 1px 1px rgba(79,206,255,1) !important
+  &.rf-disabled
+    opacity: 0.5
+    pointer-events: none
+  &.rf-60
+    height: 60px
+    line-height: 60px
+    padding: 0 78px
+    font-size: 18px
+  &.rf-50
+    height: 50px
+    line-height: 50px
+    padding: 0 30px
+    font-size: 18px
+  &.rf-40
+    height: 40px
+    line-height: 40px
+    padding: 0 28px
+    font-size: 14px
+  &.blue
+    background-image: linear-gradient(-179deg, #5690FF 0%, #387DFF 97%)
+    box-shadow: 0 3px 16px 0 rgba(56,125,255,0.5)
+    color: $white
+    &:hover, &:focus
+      box-shadow: 0 3px 16px 0 rgba(56,125,255,0.5)
+      background-image: linear-gradient(-179deg, #6EA0FF 5%, #518DFF 97%)
+      color: $white
+    &:active
+      box-shadow: unset
+      background-image: linear-gradient(-179deg, #4D88F9 0%, #206CFD 96%)
+  &.green
+    color: $white
+    box-shadow: 0 3px 16px 0 rgba(33,209,116,0.5)
+    background-image: linear-gradient(-180deg, #58F17B 4%, #16CD6F 93%)
+    &:hover, &:focus
+      box-shadow: 0 3px 16px 0 rgba(33,209,116,0.5)
+      background-image: linear-gradient(-180deg, #67FC89 6%, #31DE84 92%)
+      color: $white
+    &:active
+      background-image: linear-gradient(-180deg, #41F169 4%, #05C562 92%)
+      box-shadow: unset
+  &.orange
+    background: linear-gradient(to bottom, #ffa330, #ff9346, #ff8559, #fb7a6a, #f07379)
+    box-shadow: 0 3px 16px 0 rgba(243, 124, 108, 0.5)
+    color: $white
+    &:hover, &:focus
+      box-shadow: 0 3px 16px 0 rgba(243, 124, 108, 0.5)
+      background-image: linear-gradient(to bottom, #ffb04e, #ffa159, #ff9367, #ff8775, #ff7e84)
+      color: $white
+    &:active
+      box-shadow: unset
+      background-image: linear-gradient(to bottom, #ff991a, #ff8a36, #ff7d4c, #ff725f, #fe6a71)
+  &.purple
+    color: $white
+    box-shadow: 0 3px 16px 0 rgba(156,149,255,0.5)
+    background-image: linear-gradient(to bottom, #9c95ff, #938bf9, #8981f4, #8077ee, #766de8)
+    &:hover, &:focus
+      box-shadow: 0 3px 16px 0 rgba(156,149,255,0.5)
+      background-image: linear-gradient(to bottom, #b5afff, #afa8fe, #a8a1fe, #a29bfd, #9b94fc)
+      color: $white
+    &:active
+      background-image: linear-gradient(to bottom, #8c83f7, #8279f2, #796fed, #6f65e7, #655be2)
+      box-shadow: unset
+  &.white
+    background-image: linear-gradient(0deg, #F5FAFE 6%, #FFFFFF 100%)
+    border: 1px solid #EEF5FF
+    box-sizing: border-box
+    box-shadow: 0 4px 16px 0 rgba(0, 82, 224, 0.15)
+    color: $secondarySemiDark
+    &:hover, &:focus
+      background-image: linear-gradient(0deg, #FFFFFF 8%, #FFFFFF 100%) !important
+      background: $white
+      box-shadow: 0 4px 16px 0 rgba(0, 82, 224, 0.15)
+    &:active
+      box-shadow: unset
+      background-image: linear-gradient(0deg, #E9F5FF 6%, #FFFFFF 100%)
+  &.red
+    background-image: linear-gradient(to bottom, #ff706b, #ff6661, #ff5a56, #ff4e4c, #ff4141)
+    color: $white
+    box-shadow: 0 3px 16px 0 rgba(255,76,76,0.5)
+    &:hover, &:focus
+      box-shadow: 0 3px 16px 0 rgba(255,76,76,0.5)
+      background-image: linear-gradient(to bottom, #ff8170, #ff786a, #ff6f64, #ff655f, #ff5a5a)
+    &:active
+      background-image: linear-gradient(to bottom, #ff5f59, #ff544e, #ff4843, #ff3b37, #ff2b2b)
+      box-shadow: unset
