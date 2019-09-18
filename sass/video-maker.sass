@@ -20,11 +20,26 @@
             width: 100%
             margin: 0 auto
     .slide-ill
-        width: 100%
+        width: 80%
         left: 50%
         top: 20%
     .blue-background
         background: $blue
         position: relative
         background: linear-gradient(to bottom, #387DFF 50%, #EEF5FF 50%)
-        padding: 0 100px
+
+@media screen and ( max-width: 992px )
+    .video-maker
+        .container
+            width: 90%
+            .video-maker-items-wrap
+                flex-direction: column
+                display: inline-block
+                padding-top: 30px
+                .items
+                    margin-top: 30px
+                .items:first-child
+                    margin-top: 0
+                    .item-text
+                        margin-left: 20px
+    
