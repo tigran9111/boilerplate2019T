@@ -1,9 +1,22 @@
 .logo-maker
     text-align: center
-    background: #EEF5FF
     padding-top: 100px
     background: url("../img/logo-maker-background.svg")
-    background-position: cover
+    background-size: cover
+    background-position: bottom
+    height: 750px
     .text   
         max-width: 850px
         margin: 30px auto
+
+    .logo-maker-slider
+        height: 300px
+        background: url('../img/logo-maker-items.png')
+        background-size: cover
+        animation: slide 40s infinite linear
+        @keyframes slide
+            from 
+                background-position: 0 0
+            to 
+                background-position: -2000px 0
+                

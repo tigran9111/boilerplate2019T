@@ -2,22 +2,27 @@
     background: url('../img/main-page-background.svg')
     background-size: cover
     background-position: bottom center
+    height: 100vh
     .container
         text-align: center
-        padding-top: 80px
         display: flex
         flex-direction: column
         justify-content: center
         height: 100%
+        .title
+            letter-spacing: 1px
+        .second-title
+            margin-top: 15px
         .main-content-wrap
             display: flex
             align-items: center
-            justify-content: space-between
+            justify-content: space-evenly
             margin-top: 75px
-            height: 100%
+            height: 60%
             .content-text
                 max-width: 580px
                 width: 100%
+                align-self: center
                 .text
                     border-top: 4px solid $coral
                     padding: 30px 30px 
@@ -31,16 +36,17 @@
                         display: flex
                         margin-top: 30px
                         .rf-descr
-                            margin-left: 10px
+                            margin-left: 10px   
+                            font-weight: 500
                     .rf-heading
                         font-weight: 500
-                .rf-btn
-                    margin-top: 30px
-                    padding: 0 44px 
+            .rf-btn
+                margin-top: 30px
+                padding: 0 44px 
             .content-image
                 position: relative
+                margin-left: 50px
                 align-self: flex-end
-                margin-left: 20px
                 .rendy-wrap
                     position: absolute
                     bottom: 18%
@@ -50,10 +56,15 @@
                 .rendy-img
                     width: 100%
             .hide-background
-                height: 400px
+                height: 350px
                 background-color: #F8FBFF
                 display: none
                 width: 100%
+    .arrow
+        position: absolute
+        left: 50%
+        bottom: 0
+
 
 @media screen and ( max-width: 1120px )
     .main-page
@@ -68,8 +79,12 @@
 
 @media screen and ( max-width: 1024px )
     .main-page
+        height: auto
         .container
             width: 100%
+            padding-top: 40px
+            .title
+                font-size: 30px
             .main-content-wrap
                 flex-direction: column-reverse
                 align-items: center
@@ -80,29 +95,34 @@
                     padding-bottom: 10px
                     .rendy-wrap
                         bottom: 18%
-                        left: 17%
+                        left: 18%
                         .rf-heading
                             font-size: 30px
-                .hide-background
-                    display: block
+                .content-text-wrap
+                    z-index: 3
+                    background: #F8FBFF
+                    width: 100%
                 .content-text
-                    position: absolute
-                    bottom: 3%
-                    margin: 0
+                    margin: auto
                     .text
                         margin: 0 20px
+                .rf-btn
+                    margin-top: 30px
+        .arrow
+            display: none
 
-@media screen and ( max-width: 439px )
+@media screen and ( max-width: 420px )
     .main-page
         .container
             .main-content-wrap
-                .hide-background
-                    height: 520px
-                .content-wrap
-                    bottom: 9%
-                .contetn-image
+                .content-image
                     .rendy-wrap
-                        left: 15%
+                        left: 13%
+                        .rf-heading
+                            font-size: 18px
+    
+                        
+                            
     
 
 
