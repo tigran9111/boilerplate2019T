@@ -16,19 +16,28 @@
                 margin-left: 15px
                 height: 60px
                 line-height: 60px
+            .hide-image
+                display: none
+                width: 100%
         .branding-image
             .box-img
                 width: 100%
     
 @media screen and ( max-width: 1024px )
     .branding
+        padding-bottom: 40px
         .container
             flex-direction: column-reverse
             .branding-text
                 text-align: center
+                margin-left: 0
+                .hide-image
+                    display: block
+                .rf-btn
+                    margin: 30px 0
                 .branding-subscribe
                     flex-direction: column-reverse
                     display: inline-flex
-                    .rf-descr
-                        margin-top: 20px
+            .branding-image
+                display: none
 

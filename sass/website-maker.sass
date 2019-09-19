@@ -1,14 +1,16 @@
 .website-maker
     background-color: #F5FAFE
+    overflow: hidden
     .container
         display: flex
         justify-content: space-between
         .website-maker-image
-            max-width: 700px
+            max-width: 550px
             width: 100%
+            transform: scale(1.2)
+            margin-left: 50px
         .website-maker-text
             max-width: 500px
-            width: 100%
             margin: auto
             .text
                 margin:  0 0 30px 0
@@ -19,3 +21,33 @@
                 line-height: 60px
                 padding: 0 45px
                 margin-left: 20px
+            .hide-image
+                display: none
+                width: 100%
+
+@media screen and ( max-width: 1024px )
+    .website-maker
+        padding-bottom: 35px
+        text-align: center
+        .container
+            padding-top: 30px
+            .website-maker-text
+                .line
+                    margin: 30px auto
+                figure 
+                    width: 100%
+            .website-maker-image
+                display: none
+            .website-maker-text
+                .hide-image
+                    display: block
+                    width: 100%
+            .website-maker-subscribe
+                flex-direction: column-reverse
+                display: flex
+                align-items: center
+                justify-content: center
+                .rf-descr
+                    margin-top: 20px
+                .rf-btn
+                    margin: 0

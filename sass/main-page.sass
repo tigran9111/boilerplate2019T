@@ -80,11 +80,12 @@
 @media screen and ( max-width: 1024px )
     .main-page
         height: auto
+        width: 100%
         .container
             width: 100%
             padding-top: 40px
             .title
-                font-size: 30px
+                padding: 0 10px
             .main-content-wrap
                 flex-direction: column-reverse
                 align-items: center
@@ -93,11 +94,11 @@
                     align-self: center
                     margin-left: 0
                     padding-bottom: 10px
+                    .rendy-img
+                        width: 97%
                     .rendy-wrap
                         bottom: 18%
                         left: 18%
-                        .rf-heading
-                            font-size: 30px
                 .content-text-wrap
                     z-index: 3
                     background: #F8FBFF
@@ -106,6 +107,7 @@
                     margin: auto
                     .text
                         margin: 0 20px
+                        text-align: left
                 .rf-btn
                     margin-top: 30px
         .arrow
@@ -114,6 +116,8 @@
 @media screen and ( max-width: 420px )
     .main-page
         .container
+            .second-title
+                font-size: 14px 
             .main-content-wrap
                 .content-image
                     .rendy-wrap

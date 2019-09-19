@@ -20,13 +20,9 @@
             width: 100%
             margin: 0 auto
     .slide-ill
-        width: 80%
-        left: 50%
-        top: 20%
-    .blue-background
-        background: $blue
-        position: relative
-        background: linear-gradient(to bottom, #387DFF 50%, #EEF5FF 50%)
+        width: 70%
+    figure  
+        transform: translateY(50%)
 
 @media screen and ( max-width: 992px )
     .video-maker
@@ -42,4 +38,16 @@
                     margin-top: 0
                     .item-text
                         margin-left: 20px
+        .slide-ill
+            width: 100%
+                    
+@media screen and (  max-width: 600px )
+    .video-maker
+        .container
+        figure 
+            overflow: hidden
+            .slide-ill
+                transform: scale(1.1)
+
+
     
