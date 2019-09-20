@@ -35,6 +35,12 @@
                     .items
                         display: flex
                         margin-top: 30px
+                        .list
+                            text-align: start
+                            list-style-image: url('../img/check.svg')
+                            margin-top: 40px
+                        .list:first-child
+                            margin-top: 0
                         .rf-descr
                             margin-left: 10px   
                             font-weight: 500
@@ -55,6 +61,9 @@
                     width: 100%
                 .rendy-img
                     width: 100%
+                    transition: 1s
+                .rendy-img:hover
+                    transform: scale(1.1)
             .hide-background
                 height: 350px
                 background-color: #F8FBFF
@@ -63,7 +72,7 @@
     .arrow
         position: absolute
         left: 50%
-        bottom: 0
+        bottom: 30px
 
 
 @media screen and ( max-width: 1120px )

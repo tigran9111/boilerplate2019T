@@ -3,24 +3,29 @@
     text-align: center
     padding: 50px 0 0 0
     .container
-        padding-bottom: 50px
         .video-maker-items-wrap
             display: flex
             justify-content: space-evenly
             padding-top: 60px
             .items
-                .video-maker-item
+                .video-maker-items
                     display: flex
                     align-items: center
                     margin-top: 13px
-                    .item-text
-                        margin-left: 10px
+                    text-align: start
+                .list
+                    text-align: start
+                    margin-top: 15px    
+                    list-style-image: url('../img/check.svg')           
         .title
             max-width: 940px
             width: 100%
             margin: 0 auto
     .slide-ill
         width: 70%
+        transition: 1s
+    .slide-ill:hover
+        transform: rotateX(360deg)
     figure  
         transform: translateY(50%)
 
