@@ -224,7 +224,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    top: 10%; }
+    top: 15%; }
     .main-picture .contact-us .contact-items {
       padding-bottom: 40px;
       border-bottom-left-radius: 0; }
@@ -289,8 +289,7 @@ body {
 
 .location {
   background-color: #F2F7FF;
-  position: relative;
-  padding-top: 100px; }
+  position: relative; }
   .location .location-ill {
     position: absolute;
     top: -10%;
@@ -325,18 +324,20 @@ body {
       width: 100%; }
 
 @media screen and (max-width: 992px) {
-  .location {
-    padding-top: 60px; }
-    .location .container {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-    .location .location-ill {
-      display: none; }
-    .location .location-text .title {
-      font-size: 24px; }
-    .location .location-text .content-wrap {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+  .location .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .location .location-ill {
+    display: none; }
+  .location .location-text .title {
+    font-size: 24px; }
+  .location .location-text .content-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media screen and (max-width: 767px) {
+  .location .container {
+    padding-top: 130px; } }
