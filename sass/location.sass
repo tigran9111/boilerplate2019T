@@ -6,6 +6,7 @@
         position: absolute
         top: -10%
         left: -5%
+        width: 12%
     .container
         display: flex
         align-items: center
@@ -29,3 +30,10 @@
         .map-img
             width: 100%
               
+@media screen and ( max-width: 992px )
+    .location
+        .container
+            flex-direction: column
+        .location-ill
+            display: none
+    
