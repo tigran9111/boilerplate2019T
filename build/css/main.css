@@ -63,7 +63,7 @@
   background-color: #F2F7FF;
   position: relative; }
   .main-picture .picture-wrap {
-    height: 1400px; }
+    height: 1300px; }
   .main-picture .office-image {
     width: 100%; }
   .main-picture .contact-us {
@@ -224,7 +224,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    top: 15%; }
+    top: 10%; }
     .main-picture .contact-us .contact-items {
       padding-bottom: 40px;
       border-bottom-left-radius: 0; }
@@ -289,7 +289,8 @@ body {
 
 .location {
   background-color: #F2F7FF;
-  position: relative; }
+  position: relative;
+  padding-top: 50px; }
   .location .location-ill {
     position: absolute;
     top: -10%;
@@ -340,4 +341,4 @@ body {
 
 @media screen and (max-width: 767px) {
   .location .container {
-    padding-top: 130px; } }
+    padding-top: 100px; } }
